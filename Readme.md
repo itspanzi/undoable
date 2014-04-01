@@ -2,12 +2,12 @@
 
 Undo any controller action by simply marking the action and the underlying model *undoable*.
 
-** Supports **
+**Supports**
 
 * Rails 4
 * Undoing CRUD actions
 * Adding a handlers to undo custom actions
 
-** Coming up **
+**Coming up**
 
 * Honour CanCan abilities while undoing
