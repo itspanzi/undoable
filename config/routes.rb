@@ -1,4 +1,6 @@
 Undoable::Engine.routes.draw do
 
-  put '/undo', to: 'undo#perform_undo'
+  namespace :undoable do
+    put '/undo', to: 'undo#perform_undo'
+  end
 end

@@ -4,6 +4,7 @@ module Undoable
 
     def perform_undo
       context = UndoContext.where(handle: params.require(:handle)).first
+      render json: { errors: { handle: ["Handle '#{params[:handle]}' is not found."]}}, status: :not_found and return unless context
       undo_resource = context['resource']
       resource = resource_for(undo_resource)
       if resource

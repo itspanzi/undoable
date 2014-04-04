@@ -1,4 +1,4 @@
-module ParamHandler
+module Undoable::ParamHandler
 
   def massage_attributes(attrs)
     attrs
