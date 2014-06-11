@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140401170416) do
 
   create_table "undoable_undo_contexts", force: true do |t|
     t.string   "handle"
-    t.string   "context"
+    t.text     "context"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

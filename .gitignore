@@ -1,1 +1,4 @@
 .idea
+spec/dummy/db/spec.sqlite3
+spec/dummy/db/development.sqlite3
+spec/dummy/log
